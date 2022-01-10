@@ -2,6 +2,7 @@
 cd /home/wolney/projetos/desenvolvimento_navigator_scoped/navigator-scoped  
 git pull
 composer install
+composer update
 ./vendor/bin/sail up
 php artisan optimize:clear
 php artisan key:generate
