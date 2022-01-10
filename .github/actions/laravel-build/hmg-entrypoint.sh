@@ -1,5 +1,5 @@
 #!/bin/sh
-cd home/wolney/projetos/homologacao_navigator_scoped
+cd /home/wolney/projetos/homologacao_navigator_scoped
 git pull
 ./vendor/bin/sail up
 php artisan optimize:clear
