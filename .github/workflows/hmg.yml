@@ -1,0 +1,17 @@
+name: HMGCI
+on:
+  # Triggers the workflow on push  events but only for the dev branch
+  pull_request:
+    branches: [ hmg ]   
+  workflow_dispatch: 
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: self-hosted
+    environment:  
+      name: hmg
+    steps:
+    - uses: actions/checkout@v2
+    - run:  chmod +x ./.github/actions/laravel-build/hmg-entrypoint.sh  
+    - run: ./.github/actions/laravel-build/hmg-entrypoint.sh      
