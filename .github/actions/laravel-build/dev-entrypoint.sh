@@ -1,4 +1,4 @@
-#!/bin/sh sudo bash
+#!/bin/sh 
 apt-get install php-xml
 cd /home/wolney/projetos/desenvolvimento_navigator_scoped/navigator-scoped  
 git pull
